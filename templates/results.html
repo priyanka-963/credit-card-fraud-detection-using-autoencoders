@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection Results</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h2>Fraud Detection Results</h2>
+    <div class="alert alert-info">
+        <p><b>Total Transactions:</b> {{ total }}</p>
+        <p><b>Threshold used:</b> {{ threshold }}</p>
+        <p><b>Fraudulent Transactions Detected:</b> {{ fraud_count }}</p>
+    </div>
+
+    <div class="table-responsive">
+        {{ tables|safe }}
+    </div>
+
+    <a href="/" class="btn btn-secondary mt-3">⬅ Back</a>
+</body>
+</html>
